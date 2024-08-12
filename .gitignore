@@ -11,7 +11,8 @@
 *.ilk
 *.map
 *.exp
-
+*.env
+/venv
 # Precompiled Headers
 *.gch
 *.pch
