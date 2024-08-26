@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Form</title>
+    <style>
+        form {
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #fa4544;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #fa4544;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="Cookie and session.php">
+        <label>Name:</label>
+        <input type="text" name="name" />
+
+        <label>Age:</label>
+        <input type="number" name="age" />
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+
+        <label>Email:</label>
+        <input type="email" name="email" />
+
+        <label>Phone:</label>
+        <input type="number" name="phone" />
+
+        <label>Address:</label>
+        <input type="text" name="address" />
+
+        <label>City:</label>
+        <select name="city">
+            <option value="Mumbai">Mumbai</option>
+            <option value="Suburban Mumbai">Suburban Mumbai</option>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="Thane">Thane</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
